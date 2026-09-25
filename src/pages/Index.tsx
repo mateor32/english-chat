@@ -67,8 +67,6 @@ const Index = () => {
       const status = e?.status || e?.context?.status;
       if (status === 429) {
         toast.error("Too many requests. Please wait a moment and try again.");
-      } else if (status === 402) {
-        toast.error("AI credits exhausted. Please add funds in workspace settings.");
       } else {
         toast.error("Something went wrong. Please try again.");
       }
